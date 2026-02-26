@@ -23,10 +23,10 @@ for book in books:
 data = pd.DataFrame({'Title': titles, 'Category': categories, 'Price': prices})
 
 # Save to CSV
-data.to_csv('books_to_scrape.csv', index=False)
+data.to_csv('books_travel_dataset.csv', index=False)
 print("Data scraped and saved to books_to_scrape.csv")
 # Load the dataset
-df = pd.read_csv('books_to_scrape.csv')
+df = pd.read_csv('books_travel_dataset.csv')
 
 # Data cleaning
 print(df.info())  
